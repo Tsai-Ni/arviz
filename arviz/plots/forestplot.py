@@ -37,6 +37,7 @@ def plot_forest(
     backend_config=None,
     backend_kwargs=None,
     show=None,
+    horizontal=False,
 ):
     """Forest plot to compare HDI intervals from a number of distributions.
 
@@ -260,6 +261,9 @@ def plot_forest(
         backend = rcParams["plot.backend"]
     backend = backend.lower()
 
+    if horizontal is True:
+        print("hi")
+    
     # TODO: Add backend kwargs
     plot = get_plotting_function("plot_forest", "forestplot", backend)
     axes = plot(**plot_forest_kwargs)
