@@ -2,6 +2,7 @@
 
 ## v0.x.x Unreleased
 ### New features
+* Exposed skip_dims/flatten argument as 'combine_dims' for dist_comparison, density, posterior, and violin plots ([1644])
 * Added `labeller` argument to enable label customization in plots and summary ([1201](https://github.com/arviz-devs/arviz/pull/1201))
 * Added `arviz.labels` module with classes and utilities ([1201](https://github.com/arviz-devs/arviz/pull/1201) and [1605](https://github.com/arviz-devs/arviz/pull/1605))
 * Added probability estimate within ROPE in `plot_posterior` ([1570](https://github.com/arviz-devs/arviz/pull/1570))
